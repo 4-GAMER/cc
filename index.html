@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html manifest="84ciss.manifest">
-<head>
-<meta charset='utf-8'>
 <title>4GAMER المضيف الجديد PSFREE بدون فلاش 9.00</title>
 <script>history.replaceState(null,null,'index.html');</script>
+<head>
+<meta charset='utf-8'>
 <style>
     @font-face {
         font-family: 'logging';
@@ -149,6 +149,7 @@
             window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="بدء تثبيت التخزين المؤقت!";localStorage.is755BCached=false;};
             window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
             window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="تم تثبيت التخزين المؤقت بنجاح!";localStorage.is755BCached=true;setTimeout(function(){window.location.replace("lndex.html"); }, 1500);};
+            window.applicationCache.onupdateready=function(){document.getElementById("progress").innerHTML="Update Cache Successfully!!";localStorage.is755BCached=true;setTimeout(function(){window.location.reload("myBar"); }, 1500);};
             window.applicationCache.onnoupdate=function(){window.location.replace("lndex.html");};
             window.applicationCache.onerror=function(){window.location.replace("lndex.html");};
         </script>
