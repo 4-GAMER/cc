@@ -1,7 +1,8 @@
 CACHE MANIFEST 
 #VERSION 1.1 
+
 CACHE:
-int64.js
+
 rop/900.js
 module/int64.js
 module/utils.js
@@ -22,6 +23,7 @@ index.html
 psfree.js
 lapse.js
 send.js
+goldhen.bin
 config.js
 loader.js
 kpatch/900.bin
